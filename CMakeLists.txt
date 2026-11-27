@@ -10,4 +10,10 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_executable(sysmon
     src/main.cpp
+    src/CpuMonitor.cpp 
+)
+
+
+target_include_directories(sysmon PRIVATE
+     ${CMAKE_SOURCE_DIR}/include
 )
